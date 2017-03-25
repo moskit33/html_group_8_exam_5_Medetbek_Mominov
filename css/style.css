@@ -206,7 +206,7 @@ body{
  font-size: 53px;
  color: #bd2c30;
  display: block;
- padding: 60px 0 14px;
+ padding: 9px 0 12px 0;
 }
 .analysis {
  background: url(../images/statistic-icon-01.svg) 60% 0px no-repeat;
@@ -230,7 +230,10 @@ body{
  border-color: #c62f31;
 }
 .price_item {
- padding: 50px 0;
+ margin: 50px 0;
+}
+.price_item_wrap {
+
 }
 .price_title {
  text-align: left;
@@ -241,24 +244,78 @@ body{
  padding: 11px 0px 15px 17px;
 }
 .price_content {
-
+ /*padding: 0 0 0 22px;*/
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ background: #ffffff;
 }
 .price {
- font-size: 18px;
+ font-size: 25px;
  font-weight: 700;
  color: #314559;
+ padding: 9px 0 13px 27px;
+}
+.price_content ul {
+ padding-left: 0;
 }
 .price_content li {
  border-top: 1px solid #efefef;
  color: #314559;
+ padding: 16px 0 15px 22px;
 }
+.fa-check-square-o {
+ padding-right: 10px;
+}
+.list1 {
+ padding-bottom: 136px;
+}
+.list2 {
+ padding-bottom: 86px;
+}
+.list3 {
+ padding-bottom: 36px;
+}
+.list4 {
+ padding-bottom: 86px;
+}
+
 .btn_buy {
  display: block;
  width: 100%;
- padding: 5px 0;
+ padding: 14px 0;
  text-align: center;
  background: #314559;
  color: #ffffff;
  font-size: 18px;
  font-weight:700;
+ margin-top: 10px;
+}
+.item3 .price_title{
+ background: #d34346;
+ border-color: #c62f31;
+}
+.item3 .price_content li{
+ color: #d34346;
+}
+.item3 .price_content .price{
+ color: #d34346;
+}
+.item3 .btn_buy{
+ background: #d34346;
+}
+/***Sign****/
+.sign_block {
+ background: #efefef;
+}
+.services_item {
+ background: #f7f7f7;
+}
+.sign_item {
+ 
+}
+.sign_item h5 {
+ font-weight: 600;
+ font-size: 18px;
+ color: #314559;
 }
