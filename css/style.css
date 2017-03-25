@@ -21,7 +21,8 @@ body {
 .header {
     background: #d34346;
     border-bottom: 10px solid #bd2d30;
-    padding: 30px 0 21px;;
+
+    padding-top: 10px;
 }
 
 .logo_header {
@@ -29,34 +30,49 @@ body {
     width: 170px;
 
 }
-
 .logo_header img {
     width: 155px;
 
 }
 
-/*.menu-btn {*/
-    /*display: inline-block;*/
-    /*cursor: pointer;*/
-    /*color: white;*/
-    /*font-size: 24px;*/
-/*}*/
-
-.navigation_header_menu {
+.menu {
     display: inline-block;
-    padding-left: 11%;
+    float: right;
+}
+.menu_btn {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 42px;
+    padding-left: 50px;
+}
+.menu:active,
+.menu:focus,
+.menu:hover
+.navigation_header_menu{
+    display: block;
+}
+.navigation_header_menu {
+    display: none;
+    /* padding-left: 11%; */
+    position: absolute;
+    top: 42px;
+    right: 0;
+    z-index: 99;
 }
 
 .navigation_header_menu .navigation_item {
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
-    padding: 34px 29px;
+    display: block;
+    background: #d34346;
+    padding: 34px 29px 34px;
 }
 
 .navigation_header_menu .navigation_item:hover {
     background: #bd2d30;
-
 }
 
 .navigation_social_media {
@@ -473,7 +489,65 @@ body {
 }
 
 @media screen and (min-width: 720px) {
+    .header {
+        padding: 30px 0 21px;
+    }
     .navigation_social_media {
         display: inline-block;
+    }
+    .menu {
+        float: none;
+        display: inline;
+    }
+    .menu_btn {
+        display: none;
+    }
+    .header .navigation_header_menu {
+        display: inline-block;
+        padding-left: 11%;
+        position: static;
+        top:0;
+        right:0;
+    }
+
+    .navigation_header_menu .navigation_item:hover {
+        background: #bd2d30;
+    }
+
+    .navigation_social_media .social_item {
+        margin-left: 16px;
+        display: inline-block;
+        height: 22px;
+        width: 20px;
+        color: #ffffff;
+        font-size: 21px;
+    }
+    .navigation_header_menu .navigation_item {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 34px 29px 28px;
+        display: inline;
+        background: transparent;
+    }
+
+
+
+    .navigation_social_media {
+        display: inline-block;
+        float: right;
+    }
+
+    .navigation_social_media .social_item {
+        margin-left: 16px;
+        display: inline-block;
+        height: 22px;
+        width: 20px;
+        color: #ffffff;
+        font-size: 21px;
+    }
+    .menu:active, .menu:focus, .menu:hover
+    .navigation_header_menu {
+        display: inline;
     }
 }
