@@ -38,7 +38,7 @@ body{
  color: #fff;
  text-transform: uppercase;
  font-weight: 800;
- padding: 31px 29px;
+ padding: 34px 29px;
 }
 .navigation_header_menu .navigation_item:hover {
  background: #bd2d30;
@@ -57,13 +57,16 @@ body{
  font-size: 21px;
 }
 /*****PROMO****/
+.promo {
+
+}
 .slider-item {
 
 }
 
 .promo_info {
- background: url(../uploads/slider-item.jpg) 100% 0 no-repeat;
- min-height: 374px;
+ background: url(../uploads/slider-item.jpg) 0 0 no-repeat;
+ background-size: 100%;
 }
 
 
@@ -89,10 +92,112 @@ body{
 
 }
 .intro_title {
- font-size: 25px;
+ font-size: 20px;
  color: #bd2c30;
  font-weight: 600;
+ padding: 5px 0px;
 }
 .intro_text {
  color: #212121;
+}
+/****About****/
+.title_block {
+ color: #ffffff;
+ font-weight: 800;
+ border-left: 10px solid;
+ text-transform: uppercase;
+
+ padding: 13px 15px 14px 22px;
+}
+.title_block h2 {
+ font-size: 25px;
+ display: inline-block;
+}
+.about_block {
+ background: #efefef;
+}
+.about_block .title_block {
+ background: #d34346;
+ border-color: #c62f31;
+}
+
+.title_block .arrow-up {
+ float: right;
+ display: block;
+ width: 30px;
+ height: 30px;
+ background: rgba(0,0,0,0.3);
+ opacity: 0.3;
+ color: #ffffff;
+ position: relative;
+}
+.fa-arrow-up {
+ position: absolute;
+ top: 23%;
+ left: 23%;
+ font-size: 16px;
+ opacity: 0.3;
+}
+.info_item h3{
+ font-size: 25px;
+ color: #2c3e50;
+ font-weight: 800;
+}
+.info_item p{
+ color: #111111;
+}
+.about_list {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+.fa-arrow-right {
+ color: #d34346;
+ padding: 0 10px;
+}
+.about_list li p{
+ color: #111111;
+ display: inline;
+
+}
+.quote_block {
+ padding: 30px;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ background: #f7f7f7;
+ 
+}
+.quote_block::after {
+ content: "";
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 0 25px 19px 0;
+ border-color: transparent #f7f7f7 transparent transparent;
+ position: absolute;
+ bottom: 0;
+ left: 30px;
+}
+.quote_block p {
+ color: #111111;
+ font-style: italic;
+}
+.quote_name {
+ color: #bd2d30;
+ padding-left: 50px;
+ font-weight:700;
+}
+/***Services***/
+.services_block .title_block {
+ background: #314559;
+ border-color: #18222b;
+}
+.services_block .title_block .arrow-up {
+ background: #000;
+}
+.services_item_wrap {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
