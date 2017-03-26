@@ -180,7 +180,7 @@ body {
 
 .about_block {
     background: #efefef;
-    padding-bottom: 53px;
+    padding-bottom: 21px;
 }
 
 .about_block .title_block {
@@ -434,15 +434,8 @@ body {
     padding-bottom: 50px;
 }
 
-.services_item {
-    background: #f7f7f7;
-}
 
 .sign-item-wrap {
-    background: #f7f7f7;
-}
-
-.sign_item {
     background: #f7f7f7;
     padding: 40px;
     -webkit-box-sizing: border-box;
@@ -457,16 +450,16 @@ body {
     color: #314559;
 }
 
-.sign_text_block {
-    max-width: 650px;
-}
-
 .sign-wrap {
+    float: right;
+    display: block;
+}
+.sign-wrap img{
     float: right;
     width: 210px;
     height: 60px;
 }
-
+/***Footer***/
 .footer {
     background: #314559;
     padding: 22px 0;
@@ -503,7 +496,7 @@ body {
         display: none;
     }
     .header .navigation_header_menu {
-        display: inline-block;
+        display: inline;
         padding-left: 11%;
         position: static;
         top:0;
@@ -526,7 +519,7 @@ body {
         color: #fff;
         text-transform: uppercase;
         font-weight: 800;
-        padding: 34px 29px 28px;
+        padding: 34px 2.5% 28px;
         display: inline;
         background: transparent;
     }
