@@ -1,8 +1,6 @@
-$(".slider").slick({
-
-});
-
 $(document).ready(function(){
+    $(".slider").slick({
+    });
     $(".navigation_header_menu a").on("click", function(event) {
         event.preventDefault();
         var id  = $(this).attr('href');
@@ -10,10 +8,7 @@ $(document).ready(function(){
         var top = $(id).offset().top;
 
         $('body,html').animate({scrollTop: top}, 1000);
-    });
-});
-$(document).ready(function(){
-
+        
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
