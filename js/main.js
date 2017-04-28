@@ -1,14 +1,16 @@
 $(document).ready(function(){
+
     $(".slider").slick({
     });
-    $(".navigation_header_menu a").on("click", function(event) {
+
+    $(".navigation_header_menu a").on ("click", function(event) {
         event.preventDefault();
-        var id  = $(this).attr('href');
+        var id = $(this).attr('href');
 
         var top = $(id).offset().top;
 
         $('body,html').animate({scrollTop: top}, 1000);
-        
+        });
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
